@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "real-esrgan-project"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "^3.10"
+numpy = ">=2.1.0,<2.3.0"
+torch = { version = "2.5.1", source = "pytorch" }
+torchvision = { version = "0.20.1", source = "pytorch" }
+opencv-python = "^4.12.0.88"
+
+[[tool.poetry.source]]
+name = "pytorch"
+url = "https://download.pytorch.org/whl/cu121"
+priority = "explicit"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
